@@ -36,3 +36,59 @@
     transform: rotate(360deg);
   }
 }
+.feature-card {
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.feature-card:hover {
+  transform: scale(1.05);
+  background-color: #d4edda; /* Light Green */
+}
+
+/* Active (clicked) effect */
+.active-feature {
+  background-color: #28a745 !important; /* Bootstrap success green */
+  color: white !important;
+}
+
+/* Ensure the text and icon remain white when active */
+.active-feature .card-title {
+  color: white !important;
+}
+
+.active-feature .feature-icon {
+  color: white !important;
+}
+
+/* Icon Hover Effect */
+.feature-icon {
+  transition: color 0.3s ease-in-out;
+}
+
+.feature-card:hover .feature-icon {
+  color: #155724; /* Dark Green */
+}
+
+.feature-icon {
+  color: green; /* Change icon color to green */
+}
+
+.feature-card {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect (Light Green) */
+.feature-card:hover {
+  background-color: #d4edda !important; /* Light green */
+}
+
+/* Active feature effect (Solid Green) */
+.active-feature {
+  background-color: #198754 !important; /* Bootstrap success green */
+  color: white !important;
+}
+
+.active-feature .feature-icon {
+  color: white !important;
+}
